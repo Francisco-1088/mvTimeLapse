@@ -1,7 +1,7 @@
 # mvTimeLapse
 Fetch snapshots from your MV Cameras and build a timelapse from them
 
-![alt text](https://github.com/Francisco-1088/mvTimeLapse/lapse/sample.gif)
+![alt text](lapse/sample.gif)
 
 This has been tested on Python 3.9 on Mac OS 12.1
 
