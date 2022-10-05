@@ -9,6 +9,7 @@ How to use:
 1. Clone the repo
 2. Edit the config.py file
   * Add your API_Key under `API_KEY`
+  * Add the Camera you're looking to work with under `CAMERA_SERIAL`
   * Add your timezone under `time_zone`
   * Set the start date by filling each of the items (year, month, day, hour, minute and second)
   * Set the interval at which you want to fetch snapshots in seconds under `lapse_int`
