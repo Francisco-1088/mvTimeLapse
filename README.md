@@ -7,12 +7,12 @@ This has been tested on Python 3.9 on Mac OS 12.1
 
 How to use:
 1. Clone the repo
-2. Edit the main.py file
-  -Line 9: Replace "API_KEY" with your API key
-  -Line 10: Set your timezone
-  -Line 12: Set the start date for fetching snapshots
-  -Line 14: Set the interval at which you want to fetch snapshots in seconds
-  -Line 16: Set the total time window you're looking at in seconds
-  -Line 31: Change "timelapse.gif" to whatever name you want in your timelapse file
+2. Edit the config.py file
+  * Add your API_Key under `API_KEY`
+  * Add your timezone under `time_zone`
+  * Set the start date by filling each of the items (year, month, day, hour, minute and second)
+  * Set the interval at which you want to fetch snapshots in seconds under `lapse_int`
+  * Set the total time window you're looking at in seconds under `lapse_length`
+  * Set the desired output filename under `lapse_file_name`
 3. Run "pip install -r requirements.txt"
 4. Run "python main.py"
