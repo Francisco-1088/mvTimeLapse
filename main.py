@@ -29,4 +29,5 @@ for i in range(0, lapse_length, lapse_int):
 
 img_string = date.isoformat().split('T')[0]
 
+# Comment this line out if you're on Windows and stitch the images together with Movie Maker
 os.system(f'convert -delay 10 -loop 0 ./lapse/{img_string}*.jpg {config.lapse_file_name}')
