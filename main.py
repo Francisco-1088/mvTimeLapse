@@ -18,7 +18,7 @@ lapse_length = config.lapse_length
 
 for i in range(0, lapse_length, lapse_int):
     print(date)
-    snap = dashboard.camera.generateDeviceCameraSnapshot(serial='CAMERA_SERIAL', timestamp=date.isoformat())
+    snap = dashboard.camera.generateDeviceCameraSnapshot(serial=config.CAMERA_SERIAL, timestamp=date.isoformat())
     time.sleep(10)
     local_file = open(f'./lapse/{date.isoformat().replace(":","-")}.jpg', 'wb')
     resp = requests.get(snap['url'], stream=True)
