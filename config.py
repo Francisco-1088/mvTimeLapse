@@ -1,4 +1,5 @@
 API_KEY=""
+CAMERA_SERIAL=""
 time_zone="America/Bogota"
 # These settings would be for starting on Feb 8th, 2022 at 11:04:31 (24hr format)
 start_year=2022
