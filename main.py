@@ -19,7 +19,7 @@ for i in range(0, lapse_length, lapse_int):
     print(date)
     snap = dashboard.camera.generateDeviceCameraSnapshot(serial='CAMERA_SERIAL', timestamp=date.isoformat())
     time.sleep(10)
-    local_file = open(f'./lapse/{date.isoformat()}.jpg', 'wb')
+    local_file = open(f'./lapse/{date.isoformat().replace(":","-")}.jpg', 'wb')
     resp = requests.get(snap['url'], stream=True)
     resp.raw.decode_content = True
     shutil.copyfileobj(resp.raw, local_file)
